@@ -170,10 +170,10 @@
 
 // //////////////////////method .map()
 // ////vozvraschaet Massive rezultat vypolnenia colback function
-// const arr11 = ['JavaScript', 'Java', 'Pyton', 'English', 'Sql']
+const arr11 = ['JavaScript', 'Java', 'Pyton', 'English', 'Sql']
 
 // console.log(arr11.map(el => el.length))
-// console.log(arr11.map((el, i, arr) => i ==0 || i == (arr.length - 1) ? `**${el}**` : el))
+ console.log(arr11.map((el, i, arr) => i ==0 || i == (arr.length - 1) ? `**${el}**` : el))
 
 // const newArr0 = arr10.map(item => item ** 2)
 
@@ -216,16 +216,16 @@
 // const arr12 = Array.from(Array(12).fill(0));
 // /////// .fill(0) zapolniaet massive odinakovymi znacheniami
 
-let n = 10
-let start = 10
-let finish = 25
+// let n = 10
+// let start = 10
+// let finish = 25
 
-// /////////////// .keys() zapolniaet massive chislami ot 0 do nuznogo
-// const arr13 = Array.from(Array(n + 1).keys());
-// console.log(arr13)
+// // /////////////// .keys() zapolniaet massive chislami ot 0 do nuznogo
+// // const arr13 = Array.from(Array(n + 1).keys());
+// // console.log(arr13)
 
- const arr14 = Array.from(Array(finish - start +1).fill(start), (el, i) => el + i);
- console.log(arr14)
+//  const arr14 = Array.from(Array(finish - start +1).fill(start), (el, i) => el + i);
+//  console.log(arr14)
 
 // console.log([...Array(11).keys()])
 
@@ -250,22 +250,22 @@ let finish = 25
 // let arr17 = [-1, 2, -3, 4]
 // console.log(arr17.reduce((x, y) => x + (y > 0 ? y : 0), 0)) /// y : 0 otvechaet za pustoi massive
 
-let input = [1, 3, 5, 7, 6] 
+// let input = [1, 3, 5, 7, 6] 
 
-console.log(input.filter(el => el % 2 == 0) /////////// vybrali v novyi array chitnye (.filter)
-              .reduce((sum, el) => sum + el)) /////////slozili vse vybrannye znachenia
+// console.log(input.filter(el => el % 2 == 0) /////////// vybrali v novyi array chitnye (.filter)
+//               .reduce((sum, el) => sum + el)) /////////slozili vse vybrannye znachenia
    
 
   
- /////////////////////skladyvaem vse elementy massive
-    let sum = 0;
-      input.forEach(el => sum += el)
-         console.log(sum)
+//  /////////////////////skladyvaem vse elementy massive
+//     let sum = 0;
+//       input.forEach(el => sum += el)
+//          console.log(sum)
 
-////////////////////skladyvaem cherez .reduce
-console.log(input.reduce((a, b) => a + b, 0))
+// ////////////////////skladyvaem cherez .reduce
+// console.log(input.reduce((a, b) => a + b, 0))
 
-///////////////sozdaem novyi massive iz suschestvuuschego
-const arr = N => Array.from({length : N}, (el, i) => el = i)
+// ///////////////sozdaem novyi massive iz suschestvuuschego
+// const arr = N => Array.from({length : N}, (el, i) => el = i)
 
-console.log(arr)
+// console.log(arr)
